@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ar_dashboard_report_user,ar.dashboard.report.user,model_ar_dashboard_report,account.group_account_invoice,1,0,0,0
+access_ar_dashboard_report_manager,ar.dashboard.report.manager,model_ar_dashboard_report,account.group_account_manager,1,0,0,0

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_ar_dashboard" model="ir.actions.client">
+        <field name="name">AR Dashboard</field>
+        <field name="tag">ar_dashboard_tag</field>
+    </record>
+
+    <menuitem id="menu_ar_dashboard"
+              name="AR Dashboard"
+              parent="account.menu_finance"
+              action="action_ar_dashboard"
+              sequence="1"/>
+
+</odoo>
