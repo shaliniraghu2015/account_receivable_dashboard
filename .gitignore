@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Odoo specific
+*.pyc
+.odoo/
+odoo.log
+filestore/
+sessions/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+
+# Env files
+.env
+*.pyc
