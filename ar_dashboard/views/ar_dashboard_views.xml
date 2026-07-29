@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_ar_dashboard_report_search" model="ir.ui.view">
+        <field name="name">ar.dashboard.report.search</field>
+        <field name="model">ar.dashboard.report</field>
+        <field name="arch" type="xml">
+            <search string="AR Dashboard">
+                <field name="order_ref"/>
+                <field name="invoice_ref"/>
+                <field name="partner_id"/>
+                <field name="salesperson_id"/>
+
+                <filter string="To Invoice"
+                        name="filter_to_invoice"
+                        domain="[('order_invoice_status', '=', 'to invoice')]"/>
+                <filter string="Invoiced"
+                        name="filter_invoiced"
+                        domain="[('order_invoice_status', '=', 'invoiced')]"/>
+                <separator/>
+                <filter string="Paid"
+                        name="filter_paid"
+                        domain="[('payment_state', 'in', ('paid', 'in_payment'))]"/>
+                <filter string="Partially Paid"
+                        name="filter_partial"
+                        domain="[('payment_state', '=', 'partial')]"/>
+                <filter string="Unpaid"
+                        name="filter_unpaid"
+                        domain="[('payment_state', '=', 'not_paid')]"/>
+
+                <separator/>
+                <filter string="Order Date" name="filter_order_date" date="order_date"/>
+                <filter string="Invoice Date" name="filter_invoice_date" date="invoice_date"/>
+
+                <group expand="0" string="Group By">
+                    <filter string="Customer" name="group_partner"
+                            context="{'group_by': 'partner_id'}"/>
+                    <filter string="Salesperson" name="group_salesperson"
+                            context="{'group_by': 'salesperson_id'}"/>
+                    <filter string="Order Invoice Status" name="group_invoice_status"
+                            context="{'group_by': 'order_invoice_status'}"/>
+                    <filter string="Payment Status" name="group_payment_state"
+                            context="{'group_by': 'payment_state'}"/>
+                    <separator/>
+                    <filter string="Order Date: Day" name="group_order_date_day"
+                            context="{'group_by': 'order_date:day'}"/>
+                    <filter string="Order Date: Month" name="group_order_date_month"
+                            context="{'group_by': 'order_date:month'}"/>
+                    <filter string="Order Date: Quarter" name="group_order_date_quarter"
+                            context="{'group_by': 'order_date:quarter'}"/>
+                    <filter string="Order Date: Year" name="group_order_date_year"
+                            context="{'group_by': 'order_date:year'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_ar_dashboard_report_pivot" model="ir.ui.view">
+        <field name="name">ar.dashboard.report.pivot</field>
+        <field name="model">ar.dashboard.report</field>
+        <field name="arch" type="xml">
+            <pivot string="AR Dashboard" display_quantity="true">
+                <field name="order_date" type="row" interval="month"/>
+                <field name="order_invoice_status" type="col"/>
+                <field name="order_amount_total" type="measure"/>
+                <field name="invoice_amount_total" type="measure"/>
+                <field name="invoice_amount_residual" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_ar_dashboard_report_graph" model="ir.ui.view">
+        <field name="name">ar.dashboard.report.graph</field>
+        <field name="model">ar.dashboard.report</field>
+        <field name="arch" type="xml">
+            <graph string="AR Dashboard" type="bar">
+                <field name="order_date" type="row" interval="month"/>
+                <field name="invoice_amount_residual" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_ar_dashboard_report_list" model="ir.ui.view">
+        <field name="name">ar.dashboard.report.list</field>
+        <field name="model">ar.dashboard.report</field>
+        <field name="arch" type="xml">
+            <list string="AR Dashboard" create="false" edit="false" delete="false">
+                <field name="order_ref"/>
+                <field name="partner_id"/>
+                <field name="order_date"/>
+                <field name="order_invoice_status"
+                       decoration-warning="order_invoice_status == 'to invoice'"
+                       decoration-success="order_invoice_status == 'invoiced'"/>
+                <field name="invoice_ref"/>
+                <field name="invoice_date"/>
+                <field name="payment_state"
+                       decoration-danger="payment_state == 'not_paid'"
+                       decoration-warning="payment_state == 'partial'"
+                       decoration-success="payment_state in ('paid', 'in_payment')"/>
+                <field name="order_amount_total" sum="Total"/>
+                <field name="invoice_amount_total" sum="Total"/>
+                <field name="invoice_amount_residual" sum="Total Due"/>
+                <field name="currency_id" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ar_dashboard_kanban" model="ir.ui.view">
+        <field name="name">ar.dashboard.report.kanban</field>
+        <field name="model">ar.dashboard.report</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="payment_state" class="o_kanban_dashboard">
+                <field name="order_amount_total"/>
+                <field name="invoice_amount_residual"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card oe_kanban_global_click">
+                            <strong><field name="order_ref"/></strong>
+                            <div><field name="partner_id"/></div>
+                            <div>Total: <field name="order_amount_total"/></div>
+                            <div>Due: <field name="invoice_amount_residual"/></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_ar_dashboard_report" model="ir.actions.act_window">
+        <field name="name">AR Dashboard</field>
+        <field name="res_model">ar.dashboard.report</field>
+        <field name="view_mode">kanban,list,pivot,graph</field>
+        <field name="search_view_id" ref="view_ar_dashboard_report_search"/>
+        <field name="context">{'search_default_filter_order_date': 1}</field>
+    </record>
+
+    <menuitem id="menu_ar_dashboard_root"
+              name="AR Dashboard"
+              parent="account.menu_finance_reports"
+              action="action_ar_dashboard_report"
+              sequence="5"/>
+
+</odoo>

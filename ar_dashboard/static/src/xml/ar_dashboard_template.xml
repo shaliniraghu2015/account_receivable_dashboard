@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="ar_dashboard.ArDashboard">
+        <div class="o_form_dashboard container-fluid" style="overflow-y:auto; height:100%;">
+
+            <div class="o_dashboard_title">
+                <div>
+                    <h2>Accounts Receivable Dashboard</h2>
+                    <div class="o_dashboard_subtitle">Live overview of orders by payment status</div>
+                </div>
+            </div>
+
+            <div t-if="state.data" class="row o_dashboard_common" style="margin-bottom:32px;">
+                <div class="col-12">
+                    <div class="o_section_label">Orders by Payment Status</div>
+                    <div class="row">
+
+                        <div class="col o_inner_box">
+                            <button class="btn btn-block text-left open_to_invoice" t-on-click="() => this.openFiltered('to_invoice')">
+                                <span class="o_stat_icon"><i class="fa fa-clock-o"/></span>
+                                <div class="o_stat_value">
+                                    <span>To Invoice</span>
+                                    <span class="o_stat_number" t-esc="state.data.counts.to_invoice"/>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col o_inner_box">
+                            <button class="btn btn-block text-left open_invoiced" t-on-click="() => this.openFiltered('invoiced')">
+                                <span class="o_stat_icon"><i class="fa fa-file-text-o"/></span>
+                                <div class="o_stat_value">
+                                    <span>Invoiced</span>
+                                    <span class="o_stat_number" t-esc="state.data.counts.invoiced"/>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col o_inner_box">
+                            <button class="btn btn-block text-left open_paid" t-on-click="() => this.openFiltered('paid')">
+                                <span class="o_stat_icon"><i class="fa fa-check-circle"/></span>
+                                <div class="o_stat_value">
+                                    <span>Paid</span>
+                                    <span class="o_stat_number" t-esc="state.data.counts.paid"/>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col o_inner_box">
+                            <button class="btn btn-block text-left open_partial" t-on-click="() => this.openFiltered('partially_paid')">
+                                <span class="o_stat_icon"><i class="fa fa-adjust"/></span>
+                                <div class="o_stat_value">
+                                    <span>Partially Paid</span>
+                                    <span class="o_stat_number" t-esc="state.data.counts.partially_paid"/>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col o_inner_box">
+                            <button class="btn btn-block text-left open_unpaid" t-on-click="() => this.openFiltered('unpaid')">
+                                <span class="o_stat_icon"><i class="fa fa-exclamation-circle"/></span>
+                                <div class="o_stat_value">
+                                    <span>Unpaid</span>
+                                    <span class="o_stat_number" t-esc="state.data.counts.unpaid"/>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="o_section_label">Analytics</div>
+
+            <div class="row">
+                <div class="col-6" style="margin-bottom:24px;">
+                    <div class="o_chart_card o_chart_trend">
+                        <div class="o_chart_card_header">
+                            <span class="o_chart_icon"><i class="fa fa-line-chart"/></span>
+                            <h4>Orders Trend (Last 6 Months)</h4>
+                        </div>
+                        <div style="position:relative; height:280px;">
+                            <canvas t-ref="trendChart"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6" style="margin-bottom:24px;">
+                    <div class="o_chart_card o_chart_status">
+                        <div class="o_chart_card_header">
+                            <span class="o_chart_icon"><i class="fa fa-pie-chart"/></span>
+                            <h4>Payment Status Breakdown</h4>
+                        </div>
+                        <div style="position:relative; height:280px;">
+                            <canvas t-ref="statusChart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" style="margin-bottom:24px;">
+                    <div class="o_chart_card o_chart_customers">
+                        <div class="o_chart_card_header">
+                            <span class="o_chart_icon"><i class="fa fa-users"/></span>
+                            <h4>Top 10 Customers by Amount Due</h4>
+                        </div>
+                        <div style="position:relative; height:280px;">
+                            <canvas t-ref="topCustomersChart"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6" style="margin-bottom:24px;">
+                    <div class="o_chart_card o_chart_salesperson">
+                        <div class="o_chart_card_header">
+                            <span class="o_chart_icon"><i class="fa fa-user-o"/></span>
+                            <h4>Salesperson-wise AR Breakdown</h4>
+                        </div>
+                        <div style="position:relative; height:280px;">
+                            <canvas t-ref="salespersonChart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </t>
+
+</templates>
