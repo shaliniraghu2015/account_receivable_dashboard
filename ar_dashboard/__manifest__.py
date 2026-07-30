@@ -33,5 +33,5 @@
     },
     'installable': True,
     'application': False,
-    'license': 'OPL-3',
+    'license': 'LGPL-3',
 }
