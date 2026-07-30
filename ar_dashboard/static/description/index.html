@@ -17,7 +17,7 @@
             style="background-color: #0a66c2; color: #fff; text-align: center; padding: 50px 20px;">
         <h1 style="color: #fff;">Account Receivable Dashboard</h1>
         <div class="mb-4"
-             style="background: linear-gradient(135deg, #714B67, #875A7B); color: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);;">
+             style="background:#0a66c2; color: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);;">
             <p>Monitor customer outstanding payments, overdue invoices, payment trends, and receivable performance from
                 a
                 single dashboard. This module provides real-time insights into your account receivables, helping your
@@ -30,107 +30,321 @@
     <section class="container" style="text-align: justify;">
         <div class="mb-4"
              style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4"
-                style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px; text-align: center; color:#714B67;">
-                Overview</h2>
-            <div class="mb-4"
-                 style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                <p>The Accounts Receivable Dashboard is a powerful Odoo module that provides a centralized view of your
-                    customer receivables. It helps accountants and finance teams monitor outstanding invoices, payment
-                    status, overdue amounts, and receivable trends without navigating through multiple reports.
-                    The dashboard presents key financial metrics using KPI cards, interactive charts, and graphical
-                    reports, allowing users to quickly identify pending collections and make informed business
-                    decisions.
-                </p>
+            <div class="card mb-4"
+                 style="border: none; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div class="card-header"
+                     style="background-color:#0a66c2; color:#ffffff;
+                padding:18px 25px; font-size:22px; font-weight:600;text-align: center;">
+                    Overview
+                </div>
+
+                <div class="card-body"
+                     style="background-color:#ffffff; padding:25px; color:#444;
+                font-size:16px; line-height:1.8;">
+
+                    <p>
+                        The Accounts Receivable Dashboard is a powerful Odoo module that
+                        provides a centralized view of your customer receivables.
+                        It helps accountants and finance teams monitor outstanding invoices,
+                        payment status, overdue amounts, and receivable trends without
+                        navigating through multiple reports.
+                    </p>
+                    <p>
+                        The dashboard presents key financial metrics using KPI cards,
+                        interactive charts, and graphical reports, allowing users to quickly
+                        identify pending collections and make informed business decisions.
+                    </p>
+
+                </div>
+
+                <div style="height:5px; background-color:#0a66c2;"></div>
+
             </div>
         </div>
         <!--========================Key Features==================================-->
         <div class="mb-4 container"
              style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4"
-                style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px; text-align: center; color:#714B67;">
-                Key Features</h2>
+            <div class="mb-3"
+                 style="border: none; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div class="card-header"
+                     style="background-color:#0a66c2; color:#ffffff;
+                padding:18px 25px; font-size:22px; font-weight:600;text-align: center;">
+                    Key Features
+                </div>
+            </div>
+
             <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Quickly monitor invoices categorized as</h4>
-                        <p class="mb-0">
-                            To Invoice,Invoiced,Paid,Partially Paid,Unpaid
-                        </p>
+                <div class="col-lg-6 mb-3">
+                    <div class="card h-100"
+                         style="border:none; border-radius:16px; overflow:hidden;
+                        box-shadow:0 2px 8px rgba(0,0,0,.1);">
+
+                        <!-- Card Header -->
+                        <div class="card-header"
+                             style="background-color:#0a66c2;
+                        color:#ffffff;
+                        padding:18px 25px;
+                        text-align:center;
+                        border:none;">
+
+                            <h4 class="mb-0" style="color:#ffffff;">
+                                Quickly Monitor Invoices Categorized As
+                            </h4>
+
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body"
+                             style="padding:20px; background:#ffffff;">
+
+                            <p class="mb-0" style="color:#444;">
+                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.
+                            </p>
+
+                        </div>
+                        <!-- Bottom Border -->
+                        <div style="height:5px; background-color:#0a66c2;"></div>
+
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Orders Trend Analysis</h4>
-                        <p class="mb-0">Analyze monthly receivable trends using an interactive line chart to understand
-                            payment patterns and business performance.</p>
+                <div class="col-lg-6 mb-3">
+                    <div class="card h-100"
+                         style="border:none; border-radius:16px; overflow:hidden;
+                        box-shadow:0 2px 8px rgba(0,0,0,.1);">
+
+                        <!-- Card Header -->
+                        <div class="card-header"
+                             style="background-color:#0a66c2;
+                        color:#ffffff;
+                        padding:18px 25px;
+                        text-align:center;
+                        border:none;">
+
+                            <h4 class="mb-0" style="color:#ffffff;">
+                                Quickly Monitor Invoices Categorized As
+                            </h4>
+
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body"
+                             style="padding:20px; background:#ffffff;">
+
+                            <p class="mb-0" style="color:#444;">
+                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.
+                            </p>
+
+                        </div>
+                        <!-- Bottom Border -->
+                        <div style="height:5px; background-color:#0a66c2;"></div>
+
                     </div>
                 </div>
             </div>
             <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Payment Status Breakdown</h4>
-                        <p class="mb-0">View payment distribution with a doughnut chart for a clear visual
-                            representation of invoice statuses.</p>
+                <div class="col-lg-6 mb-3">
+                    <div class="card h-100"
+                         style="border:none; border-radius:16px; overflow:hidden;
+                        box-shadow:0 2px 8px rgba(0,0,0,.1);">
+
+                        <!-- Card Header -->
+                        <div class="card-header"
+                             style="background-color:#0a66c2;
+                        color:#ffffff;
+                        padding:18px 25px;
+                        text-align:center;
+                        border:none;">
+
+                            <h4 class="mb-0" style="color:#ffffff;">
+                                Quickly Monitor Invoices Categorized As
+                            </h4>
+
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body"
+                             style="padding:20px; background:#ffffff;">
+
+                            <p class="mb-0" style="color:#444;">
+                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.
+                            </p>
+
+                        </div>
+                        <!-- Bottom Border -->
+                        <div style="height:5px; background-color:#0a66c2;"></div>
+
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Top 10 Customers by Amount Due</h4>
-                        <p class="mb-0">Identify your top customers based on the amount of receivables they have with
-                            you.</p>
+                <div class="col-lg-6 mb-3">
+                    <div class="card h-100"
+                         style="border:none; border-radius:16px; overflow:hidden;
+                        box-shadow:0 2px 8px rgba(0,0,0,.1);">
+
+                        <!-- Card Header -->
+                        <div class="card-header"
+                             style="background-color:#0a66c2;
+                        color:#ffffff;
+                        padding:18px 25px;
+                        text-align:center;
+                        border:none;">
+
+                            <h4 class="mb-0" style="color:#ffffff;">
+                                Quickly Monitor Invoices Categorized As
+                            </h4>
+
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body"
+                             style="padding:20px; background:#ffffff;">
+
+                            <p class="mb-0" style="color:#444;">
+                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.
+                            </p>
+
+                        </div>
+                        <!-- Bottom Border -->
+                        <div style="height:5px; background-color:#0a66c2;"></div>
+
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Salesperson-wise AR Breakdown</h4>
-                        <p class="mb-0">Monitor receivable amounts by salesperson to evaluate collection performance and
-                            customer management.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Interactive KPI Cards</h4>
-                        <p class="mb-0">View key performance indicators in an interactive format for better
-                            decision-making.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Real-Time Dashboard</h4>
-                        <p class="mb-0">Get real-time insights into your account receivables with our dynamic
-                            dashboard.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Responsive & User-Friendly Interface</h4>
-                        <p class="mb-0">Enjoy a seamless experience on any device with our responsive and user-friendly
-                            interface.</p>
-                    </div>
-                </div>
-            </div>
+            <!--            <div class="row g-4">-->
+            <!--                <div class="col-lg-6 mb-3">-->
+            <!--                    <div class="card h-100"-->
+            <!--                         style="border:none; border-radius:16px; overflow:hidden;-->
+            <!--                        box-shadow:0 2px 8px rgba(0,0,0,.1);">-->
+
+            <!--                        &lt;!&ndash; Card Header &ndash;&gt;-->
+            <!--                        <div class="card-header"-->
+            <!--                             style="background-color:#0a66c2;-->
+            <!--                        color:#ffffff;-->
+            <!--                        padding:18px 25px;-->
+            <!--                        text-align:center;-->
+            <!--                        border:none;">-->
+
+            <!--                            <h4 class="mb-0" style="color:#ffffff;">-->
+            <!--                                Quickly Monitor Invoices Categorized As-->
+            <!--                            </h4>-->
+
+            <!--                        </div>-->
+
+            <!--                        &lt;!&ndash; Card Body &ndash;&gt;-->
+            <!--                        <div class="card-body"-->
+            <!--                             style="padding:20px; background:#ffffff;">-->
+
+            <!--                            <p class="mb-0" style="color:#444;">-->
+            <!--                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.-->
+            <!--                            </p>-->
+
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; Bottom Border &ndash;&gt;-->
+            <!--                        <div style="height:5px; background-color:#0a66c2;"></div>-->
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-lg-6 mb-3">-->
+            <!--                    <div class="card h-100"-->
+            <!--                         style="border:none; border-radius:16px; overflow:hidden;-->
+            <!--                        box-shadow:0 2px 8px rgba(0,0,0,.1);">-->
+
+            <!--                        &lt;!&ndash; Card Header &ndash;&gt;-->
+            <!--                        <div class="card-header"-->
+            <!--                             style="background-color:#0a66c2;-->
+            <!--                        color:#ffffff;-->
+            <!--                        padding:18px 25px;-->
+            <!--                        text-align:center;-->
+            <!--                        border:none;">-->
+
+            <!--                            <h4 class="mb-0" style="color:#ffffff;">-->
+            <!--                                Quickly Monitor Invoices Categorized As-->
+            <!--                            </h4>-->
+
+            <!--                        </div>-->
+
+            <!--                        &lt;!&ndash; Card Body &ndash;&gt;-->
+            <!--                        <div class="card-body"-->
+            <!--                             style="padding:20px; background:#ffffff;">-->
+
+            <!--                            <p class="mb-0" style="color:#444;">-->
+            <!--                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.-->
+            <!--                            </p>-->
+
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; Bottom Border &ndash;&gt;-->
+            <!--                        <div style="height:5px; background-color:#0a66c2;"></div>-->
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="row g-4">-->
+            <!--                <div class="col-lg-6 mb-3">-->
+            <!--                    <div class="card h-100"-->
+            <!--                         style="border:none; border-radius:16px; overflow:hidden;-->
+            <!--                        box-shadow:0 2px 8px rgba(0,0,0,.1);">-->
+
+            <!--                        &lt;!&ndash; Card Header &ndash;&gt;-->
+            <!--                        <div class="card-header"-->
+            <!--                             style="background-color:#0a66c2;-->
+            <!--                        color:#ffffff;-->
+            <!--                        padding:18px 25px;-->
+            <!--                        text-align:center;-->
+            <!--                        border:none;">-->
+
+            <!--                            <h4 class="mb-0" style="color:#ffffff;">-->
+            <!--                                Quickly Monitor Invoices Categorized As-->
+            <!--                            </h4>-->
+
+            <!--                        </div>-->
+
+            <!--                        &lt;!&ndash; Card Body &ndash;&gt;-->
+            <!--                        <div class="card-body"-->
+            <!--                             style="padding:20px; background:#ffffff;">-->
+
+            <!--                            <p class="mb-0" style="color:#444;">-->
+            <!--                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.-->
+            <!--                            </p>-->
+
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; Bottom Border &ndash;&gt;-->
+            <!--                        <div style="height:5px; background-color:#0a66c2;"></div>-->
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-lg-6 mb-3">-->
+            <!--                    <div class="card h-100"-->
+            <!--                         style="border:none; border-radius:16px; overflow:hidden;-->
+            <!--                        box-shadow:0 2px 8px rgba(0,0,0,.1);">-->
+
+            <!--                        &lt;!&ndash; Card Header &ndash;&gt;-->
+            <!--                        <div class="card-header"-->
+            <!--                             style="background-color:#0a66c2;-->
+            <!--                        color:#ffffff;-->
+            <!--                        padding:18px 25px;-->
+            <!--                        text-align:center;-->
+            <!--                        border:none;">-->
+
+            <!--                            <h4 class="mb-0" style="color:#ffffff;">-->
+            <!--                                Quickly Monitor Invoices Categorized As-->
+            <!--                            </h4>-->
+
+            <!--                        </div>-->
+
+            <!--                        &lt;!&ndash; Card Body &ndash;&gt;-->
+            <!--                        <div class="card-body"-->
+            <!--                             style="padding:20px; background:#ffffff;">-->
+
+            <!--                            <p class="mb-0" style="color:#444;">-->
+            <!--                                To Invoice, Invoiced, Paid, Partially Paid, and Unpaid.-->
+            <!--                            </p>-->
+
+            <!--                        </div>-->
+            <!--                        &lt;!&ndash; Bottom Border &ndash;&gt;-->
+            <!--                        <div style="height:5px; background-color:#0a66c2;"></div>-->
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
         <!--=========================Screenshots>=======================================-->
         <div class="mb-4"
@@ -194,13 +408,20 @@
     <section class="container" style="text-align: justify;">
         <div class="mb-4"
              style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4"
-                style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px;text-align: center; color:#714B67;">
-                Our Services</h2>
+            <div class="mb-3"
+                 style="border: none; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
+                <div class="card-header"
+                     style="background-color:#0a66c2; color:#ffffff;
+                padding:18px 25px; font-size:22px; font-weight:600;text-align: center;">
+                    Our Services
+                </div>
+            </div>
+
+
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
+                         style="border-radius:16px; background-color:#0a66c2; color: #fff;">
                         <img src="images/final_pic/implementation.png" alt="Implementation" class="img-fluid mb-3">
                         <h2 style="color:#f7f5ff;">Implementation</h2>
                     </div>
