@@ -1,265 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Account Receivable Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Apps</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
 </head>
-<section style="border-radius: 16px;">
-
+<body>
+<section style="padding: 10px;border: 1px solid #8B5CF6;border-radius: 13px;">
     <!-- ================= HEADER ================= -->
-
-    <section
-             style="background: linear-gradient(135deg, #714B67, #875A7B); color: #fff; text-align: center; padding: 50px 20px;">
-        <h1 style="color: #fff;">Account Receivable Dashboard</h1>
-        <div class="mb-4"
-             style="background: linear-gradient(135deg, #714B67, #875A7B); color: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <p>Monitor customer outstanding payments, overdue invoices, payment trends, and receivable performance from
+    <section class="container">
+        <div class="card"
+             style="text-align: center;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+            <p style="font-size:25px;">Account Receivable Dashboard</p>
+            <p style="font-size:16px;">Monitor customer outstanding payments, overdue invoices, payment trends, and
+                receivable
+                performance
+                from
                 a
-                single dashboard. This module provides real-time insights into your account receivables, helping your
-                finance team improve cash flow, reduce overdue payments, and make informed financial decisions.</p>
-            <!--                    <img src="banner.png" alt="Banner">-->
-
+                single dashboard. This module provides real-time insights into your account receivables, helping
+                your
+                finance team improve cash flow, reduce overdue payments, and make informed financial
+                decisions.
+            </p>
         </div>
     </section>
-
-    <section class="container" style="text-align: justify;">
-        <div class="mb-4"
-             style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4" style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px; text-align: center; color:#714B67;">Overview</h2>
-            <div class="mb-4"
-                 style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                <p>The Accounts Receivable Dashboard is a powerful Odoo module that provides a centralized view of your
-                    customer receivables. It helps accountants and finance teams monitor outstanding invoices, payment
-                    status, overdue amounts, and receivable trends without navigating through multiple reports.
-                    The dashboard presents key financial metrics using KPI cards, interactive charts, and graphical
-                    reports, allowing users to quickly identify pending collections and make informed business
-                    decisions.
+    <section class="container mb-3 p-3">
+        <div style="border: 1px solid #8B5CF6;border-radius: 13px;">
+            <div class="card "
+                 style="font-size:22px;text-align: center;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;border: 1px solid #8B5CF6;">
+                Overview
+            </div>
+            <div class="card-body"
+                 style="background-color:#ffffff; padding:25px; color:#444;font-size:16px;border-radius: 13px;">
+                <p>
+                    The Accounts Receivable Dashboard is a powerful Odoo module that
+                    provides a centralized view of your customer receivables.
+                    It helps accountants and finance teams monitor outstanding invoices,
+                    payment status, overdue amounts, and receivable trends without
+                    navigating through multiple reports.
+                </p>
+                <p>
+                    The dashboard presents key financial metrics using KPI cards,
+                    interactive charts, and graphical reports, allowing users to quickly
+                    identify pending collections and make informed business decisions.
                 </p>
             </div>
+            <div style="height:5px; background-color:#8B5CF6;border-radius: 13px;"></div>
         </div>
-        <!--========================Key Features==================================-->
-        <div class="mb-4 container"
-             style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4" style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px; text-align: center; color:#714B67;">Key Features</h2>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Quickly monitor invoices categorized as</h4>
-                        <p class="mb-0">
-                            To Invoice,Invoiced,Paid,Partially Paid,Unpaid
+    </section>
+    <!--========================Key Features==================================-->
+    <section class="container mb-3 p-3">
+        <div class="card mb-3"
+             style="font-size:25px;text-align: center;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+            Key Features
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px; border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Quickly monitor invoices categorized as
+                        </p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body" style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            To Invoice,Invoiced,Paid,Partially Paid,Unpaid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Orders Trend Analysis
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body"
+                         style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            Analyze monthly receivable trends using an interactive line chart to understand
+                            payment patterns and business performance.
                         </p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Orders Trend Analysis</h4>
-                        <p class="mb-0">Analyze monthly receivable trends using an interactive line chart to understand
-                            payment patterns and business performance.</p>
-                    </div>
-                </div>
             </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Payment Status Breakdown</h4>
-                        <p class="mb-0">View payment distribution with a doughnut chart for a clear visual
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Payment Status Breakdown
+                        </p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body" style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            View payment distribution with a doughnut chart for a clear visual
                             representation of invoice statuses.</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Top 10 Customers by Amount Due</h4>
-                        <p class="mb-0">Identify your top customers based on the amount of receivables they have with
-                            you.</p>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Top 10 Customers by Amount Due
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body"
+                         style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            Identify your top customers based on the amount of receivables they have with
+                            you.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Salesperson-wise AR Breakdown</h4>
-                        <p class="mb-0">Monitor receivable amounts by salesperson to evaluate collection performance and
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Salesperson-wise AR Breakdown
+                        </p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body" style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            Monitor receivable amounts by salesperson to evaluate collection performance and
                             customer management.</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Interactive KPI Cards</h4>
-                        <p class="mb-0">View key performance indicators in an interactive format for better
-                            decision-making.</p>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Interactive KPI Cards
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body"
+                         style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            View key performance indicators in an interactive format for better
+                            decision-making.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Real-Time Dashboard</h4>
-                        <p class="mb-0">Get real-time insights into your account receivables with our dynamic
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Real-Time Dashboard
+                        </p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body" style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            Get real-time insights into your account receivables with our dynamic
                             dashboard.</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="col-lg-6 mb-4">
-                    <div class="h-100"
-                         style="background-color:#ffffff; color:#714B67; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-                        <h4 style="color: #714B67;">Responsive & User-Friendly Interface</h4>
-                        <p class="mb-0">Enjoy a seamless experience on any device with our responsive and user-friendly
-                            interface.</p>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card h-100" style="border-radius: 13px;border: 1px solid #8B5CF6;font-size:16px;">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color:#8B5CF6;
+                            color:#ffffff;
+                            padding:18px 25px;
+                            text-align:center;
+                            border-radius: 13px;
+                            ">
+                        <p class="mb-0" style="color:#ffffff;">
+                            Interactive KPI CardsResponsive & User-Friendly Interface
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body"
+                         style="padding:20px; background:#ffffff;border-radius: 13px;">
+                        <p class="mb-0" style="color:#444;">
+                            Enjoy a seamless experience on any device with our responsive and user-friendly
+                            interface.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--=========================Screenshots>=======================================-->
-        <div class="mb-4" style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="text-center" style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px;color: #714B67;">Screenshots</h2>
-            <div class="text-left mb-4" style="padding: 25px;color: #714B67;">
-                <h4 style="color: #714B67;">Account Receivable Dashboard Overview</h4>
+        <div style="height:5px; background-color:#8B5CF6;"></div>
+    </section>
+    <!--===============================Screenshots>===========================-->
+    <section class="container mb-3 p-3">
+        <div class="card mb-3"
+             style="font-size:25px;text-align: center;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+            Screenshots
+        </div>
+        <div class="mb-3" style="border-radius: 13px; border: 1px solid #8B5CF6;">
+            <div class="card mb-3"
+                 style="font-size:16px;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+                <p>Account Receivable Dashboard Overview</p>
                 <p>Get a comprehensive view of your account receivables with our interactive dashboard.</p>
-                <img class="img img-fluid"
-                     src="images/11.png"
-                     style="
-                    width:100%;
-                    border-radius:16px;
-                    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-                    "/>
             </div>
-            </br>
-            <div class="text-left mb-4" style="padding: 25px;color: #714B67;">
-                <h4 style="color: #714B67;">AR Dashboard Views</h4>
+            <img class="img img-fluid p-3"
+                 src="images/11.png" style="width:100%;"/>
+        </div>
+        </br>
+
+
+        <div class="mb-3" style="border-radius: 13px; border: 1px solid #8B5CF6;">
+            <div class="card mb-3"
+                 style="font-size:16px;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+                <p>AR Dashboard Views</p>
                 <p>Click the "Reporting" menu and select the "AR Dashboard" submenu. The invoice records will be
                     displayed in List, Kanban, Pivot, and Graph views.</p>
-                <img class="img img-fluid"
-                     src="images/12.png"
-                     style="
-                    width:100%;
-                    border-radius:16px;
-                    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-                    "/>
             </div>
-            </br>
-             <div class="text-left mb-4" style="padding: 25px;color: #714B67;">
-                <h4 style="color: #714B67;">Group By</h4>
-                <p>When you select a Group By option, the payment records will be grouped accordingly.</p>
-                <img class="img img-fluid"
-                     src="images/13.png"
-                     style="
-                    width:100%;
-                    border-radius:16px;
-                    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-                    "/>
-            </div>
-            </br>
-             <div class="text-left mb-4" style="padding: 25px;color: #714B67;">
-                <h4 style="color: #714B67;">Filters</h4>
-                <p>Use the filter options to narrow down the displayed invoice records.</p>
-                <img class="img img-fluid"
-                     src="images/14.png"
-                     style="
-                    width:100%;
-                    border-radius:16px;
-                    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-                    "/>
-            </div>
-            </br>
+            <img class="img img-fluid p-3"
+                 src="images/12.png"
+                 style="
+                        width:100%;
+                        border-radius:16px;
+                        box-shadow:0 10px 30px rgba(0,0,0,0.15);
+                        "/>
         </div>
+        </br>
+
+        <div class="mb-3" style="border-radius: 13px; border: 1px solid #8B5CF6;">
+            <div class="card mb-3"
+                 style="font-size:16px;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+                <p>Group By</p>
+                <p>When you select a Group By option, the payment records will be grouped accordingly.</p>
+            </div>
+            <img class="img img-fluid p-3"
+                 src="images/13.png"
+                 style="
+                        width:100%;
+                        border-radius:16px;
+                        box-shadow:0 10px 30px rgba(0,0,0,0.15);
+                        "/>
+        </div>
+        </br>
+
+        <div class="mb-3" style="border-radius: 13px; border: 1px solid #8B5CF6;">
+            <div class="card mb-3"
+                 style="font-size:16px;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+                <p>Filters</p>
+                <p>Use the filter options to narrow down the displayed invoice records.</p>
+            </div>
+            <img class="img img-fluid p-3"
+                 src="images/14.png"
+                 style="
+                        width:100%;
+                        border-radius:16px;
+                        box-shadow:0 10px 30px rgba(0,0,0,0.15);
+                        "/>
+        </div>
+        </br>
+        <div style="height:5px; background-color:#8B5CF6;"></div>
     </section>
+
     <!--   =========================Services=================================== -->
 
-    <section class="container" style="text-align: justify;">
-        <div class="mb-4"
-             style="background: #f8f8fb; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);">
-            <h2 class="mb-4" style="text-decoration: underline; text-decoration-style: solid;text-decoration-thickness: 4px;text-align: center; color:#714B67;">Our Services</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/implementation.png" alt="Implementation" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Implementation</h2>
-                    </div>
+    <section class="container mb-3 p-3">
+        <div class="card mb-3"
+             style="font-size:25px;text-align: center;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;">
+            Our Services
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/implementation.png" alt="Implementation" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Implementation</h2>
                 </div>
+            </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/customization.png" alt="Customization" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Customization</h2>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/customization.png" alt="Customization" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Customization</h2>
                 </div>
+            </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/integration.png" alt="Integration" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Integration</h2>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/integration.png" alt="Integration" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Integration</h2>
                 </div>
+            </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/consultancy.png" alt="Consultancy" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Consultancy</h2>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/consultancy.png" alt="Consultancy" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Consultancy</h2>
                 </div>
+            </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/migration.png" alt="Migration" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Migration</h2>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/migration.png" alt="Migration" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Migration</h2>
                 </div>
+            </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 h-100 text-center"
-                         style="border-radius:16px; background: linear-gradient(135deg, #714B67, #875A7B); color: #fff;">
-                        <img src="images/final_pic/support.png" alt="Support" class="img-fluid mb-3">
-                        <h2 style="color:#f7f5ff;">Support</h2>
-                    </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 h-100 text-center"
+                     style="border-radius:16px; background-color:#8B5CF6; color: #fff;">
+                    <img src="images/final_pic/support.png" alt="Support" class="img-fluid mb-3">
+                    <h2 style="font-size:18px;color:#f7f5ff;">Support</h2>
                 </div>
             </div>
         </div>
+        <div style="height:5px; background-color:#8B5CF6;"></div>
     </section>
 
 
     <!-- ================================= SUPPORT ============================================== -->
-    <section class="p-4" style="text-align: justify;">
-        <div class="mb-4"
-             style="text-align: center;color:white;background: linear-gradient(135deg, #714B67, #875A7B); padding: 25px; box-shadow: 0 2px 8px rgba(0, 0, 0, .1);border-radius: 13px;">
-            <h2 style="color:white;">
+    <section class="container mb-3 p-3">
+        <div style="border: 1px solid #8B5CF6;border-radius: 13px;text-align: center;">
+            <div class="card"
+                 style="font-size:22px;color:white;background-color:#8B5CF6; padding: 25px; border-radius: 13px;border: 1px solid #8B5CF6;">
                 Need Help?
-            </h2>
-
-            <p style="font-size:18px;">
-                Our team is ready to help you with installation and customization.
-            </p>
-
-            <a href="mailto:raghubalodoo@gmail.com"
-               class="btn btn-lg"
-               style="
-           background-color:white;
-           color:#714B67;
-           border-radius:8px;
-           ">raghubalodoo@gmail.com
-            </a>
+            </div>
+            <div class="card-body"
+                 style="background-color:#ffffff; padding:25px; color:#444;font-size:16px;border-radius: 13px;">
+                <p>
+                    Our team is ready to help you with installation and customization.
+                </p>
+                <a href="mailto:raghubalodoo@gmail.com"
+                   class="btn btn-lg"
+                   style="background-color:#8B5CF6;color:white;border-radius:8px;font-size:16px;">
+                    raghubalodoo@gmail.com
+                </a>
+            </div>
+            <div style="height:5px; background-color:#8B5CF6;border-radius: 13px;"></div>
         </div>
     </section>
 </section>
+</body>
 </html>
